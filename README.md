@@ -2,6 +2,8 @@
 
 > **WARNING:** RedwoodJS software has not reached a stable version 1.0 and should not be considered suitable for production use. In the "make it work; make it right; make it fast" paradigm, Redwood is in the later stages of the "make it work" phase.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1da39fbd-f865-4e34-a418-629bb486c9c9/deploy-status)](https://app.netlify.com/sites/happy-hermann-839bd2/deploys)
+
 ## Getting Started
 - [SnipCart: jamstack framework redwoodjs tutorial](https://snipcart.com/blog/jamstack-framework-redwoodjs-tutorial)
 - [Tutorial](https://redwoodjs.com/tutorial/welcome-to-redwood): getting started and complete overview guide.

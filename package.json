@@ -6,7 +6,7 @@
       "web"
     ]
   },
-  "devDependencies": {
+  "dependencies": {
     "@redwoodjs/core": "^0.20.0"
   },
   "eslintConfig": {
