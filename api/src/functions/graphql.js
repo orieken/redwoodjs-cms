@@ -2,24 +2,24 @@ import {
   createGraphQLHandler,
   makeMergedSchema,
   makeServices,
-} from '@redwoodjs/api'
+} from '@redwoodjs/api';
 
-import schemas from 'src/graphql/**/*.{js,ts}'
-import services from 'src/services/**/*.{js,ts}'
-import { db } from 'src/lib/db'
+import schemas from 'src/graphql/**/*.{js,ts}';
+import services from 'src/services/**/*.{js,ts}';
+import { db } from 'src/lib/db';
 
 export const handler = (event, context, callback) => {
-  if(process.env.NODE_ENV === 'production' && context?.clientContext?.user == null){
+  if (process.env.NODE_ENV === 'production' && context?.clientContext?.user == null) {
     return callback(null, {
       statusCode: 401,
-      body: "Unauthorized"
-    })
+      body: 'Unauthorized',
+    });
   }
   return (createGraphQLHandler({
     schema: makeMergedSchema({
       schemas,
-      services: makeServices({ services }),
+      services: makeServices({services}),
     }),
     db,
-  }))(event,context,callback)
-}
+  }))(event, context, callback);
+};
